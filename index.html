@@ -16,9 +16,14 @@
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+
 </head>
 
 <body>
+
+  <!-- <script src="js/typed.min.js></script> -->
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
@@ -35,10 +40,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -49,23 +54,38 @@
   </nav>
 
   <!-- Page Content -->
-  <section>
+  <section class="pb-5">
     <div class="container">
       <video autoplay muted loop id="cover_video">
         <source src="media/ocean.mp4" type="video/mp4">
       </video>
       <div class="row">
         <div class="col-lg-8">
-          <h1 id="cover_text" class="padding-top-lg display-2 text-light">Hi, my name is Jordan</h1>
+          <h1 id="cover_text" class=" padding-top-lg display-2 text-light"><span id="title"></span></h1>
         </div>
       </div>
     </div>
   </section>
 
+
+  
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <script src="./scripts/typed.js"></script>
+
+  <script type="application/JavaScript">
+
+    var options = {
+      strings: ["Hi, my name is Jordan"],
+      typeSpeed: 50
+    }
+
+    var typed = new Typed("#title", options);
+  </script>
 </body>
 
 </html>
