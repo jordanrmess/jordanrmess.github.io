@@ -16,10 +16,10 @@
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300,200" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="css/hover.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet">
 
 
 
@@ -44,9 +44,9 @@
           <li class="hvr-underline-reveal nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="hvr-underline-reveal nav-item">
+          <!-- <li class="hvr-underline-reveal nav-item">
             <a class="nav-link" href="#">Blog</a>
-          </li>
+          </li> -->
           <li class=" hvr-underline-reveal nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
@@ -63,7 +63,54 @@
       </video> -->
       <div class="row">
         <div class="col-lg-8">
-          <h1 id="cover_text" class=" display-2 text-light"><span id="title"></span></h1>
+          <h1 id="cover_text" class=" display-2 "><span id="title"></span></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div class="row about-header">
+            <div class="col">
+              <h1>
+                Hey, thanks for sticking around.
+              </h1>
+            </div>
+          </div>
+          <div class="row about-desc1">
+            <div class="col">
+              <span class="desc1">
+                If you didn’t catch my super cool home page animation, then I guess I will take this time
+                to
+                introduce myself again.
+              </span>
+            </div>
+          </div>
+          <div class="row about-intro2">
+            <div class="col">
+              Hi again, my name is still Jordan.
+            </div>
+          </div>
+          <div class="row about-desc2">
+            <div class="col">
+              I’m a student at the
+              <a href="https://umd.edu">University of Maryland College Park</a>, majoring in Computer Science and
+              minoring in
+              Entrepreneurship. I could go on and on here about academics and the opportunities that it has given me...
+            </div>
+          </div>
+          <div class="row">
+            <div class="hvr-pulse col-10 rounded about-link">
+              <a href="https://www.linkedin.com/in/jordan-mess">or I could just drop this link (because why type things twice)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm visible-lg-block photo-frame">
+          <img src="media/jordan.png" />
         </div>
       </div>
     </div>
@@ -97,7 +144,6 @@
 
 
 
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -115,13 +161,15 @@
   </script>
 
   <script>
-   $(document).ready(function () {
-    $('.navbar a').on("click", function () {
+    $(document).ready(function () {
+      $('.navbar a').on("click", function () {
         $(this).parent().siblings().find("a").removeClass('active');
         $(this).addClass('active');
+      });
     });
-});
   </script>
+
+
 </body>
 
 </html>

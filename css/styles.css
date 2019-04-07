@@ -45,6 +45,8 @@ body {
   padding-top: 4rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
+  color: #4F5A65;
+ 
 
 }
 
@@ -85,4 +87,70 @@ section {
 }
 
 
+#about { 
+  background-color: #6E9887;
+  padding: 4rem 0;
+}
 
+#about h1 {
+  padding-bottom:0.5rem;
+}
+
+#about img {
+  height:50%;
+  width:auto;
+}
+
+#about img {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+#about img:hover {
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.desc1 {
+  font-weight: 400;
+  padding: 3rem 0;
+}
+
+.typed_link{
+  text-decoration: none;
+  color:#212529;
+}
+
+.typed_link :hover :active{
+  text-decoration: none;
+  color:#212529;
+}
+
+.about-intro2{
+  font-style: italic;
+  font-weight:600;
+}
+
+.row .row {
+  padding:1rem 0;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+.about-link {
+  background-color: #212529;
+  border-color: #212529;
+  color:#6E9887;
+  padding:1rem;
+}
