@@ -11,11 +11,12 @@
   -o-background-size: cover;
 } */
 
-body{
-  background-color: coral;
+body {
+  background-color: #f8d591;
 
 }
-#cover_video{
+
+/* #cover_video{
   min-width: 100%;
   min-height: 100%;
   position: fixed;
@@ -27,13 +28,57 @@ body{
   object-fit: cover;
 
   -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-filter: blur(1px);
-}
+/* filter: blur(1px);
+} */
 
-#cover_text{ 
+#cover_text {
   padding-top: 4rem;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
 
 }
+
+.home_page {
+  height: 100%;
+  width: 100%;
+
+}
+
+section {
+  padding: 6rem 0;
+}
+
+
+.cover {
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
+}
+
+
+@media (min-width: 992px) {
+  .cover {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
+  }
+  #contact {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
+  }
+}
+
+#contact {
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
+  background-color:white;
+}
+
+#contact h1 {
+  padding-bottom: 3rem;
+  font-size: 5vw;
+}
+
+.faa-shake.animated-hover:hover{-webkit-animation:wrench 2.5s ease infinite;animation:wrench 2.5s ease infinite}
+
+
 
 
