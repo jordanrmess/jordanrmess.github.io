@@ -11,9 +11,15 @@
   -o-background-size: cover;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+html,body{
+  min-height: 100% !important;
+  height:100%;
+}
 body {
   background-color: #f8d591;
-
 }
 
 /* #cover_video{
@@ -31,6 +37,10 @@ body {
 /* filter: blur(1px);
 } */
 
+.navbar{
+  font-family: 'Open Sans', sans-serif;
+}
+
 #cover_text {
   padding-top: 4rem;
   font-family: 'Open Sans', sans-serif;
@@ -45,40 +55,34 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  height:100%;
+  padding: 10rem 0;
 }
 
 
-.cover {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
-}
 
-
-@media (min-width: 992px) {
-  .cover {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
-  }
-  #contact {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
-  }
-}
-
-#contact {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
-  background-color:white;
-}
 
 #contact h1 {
-  padding-bottom: 3rem;
-  font-size: 5vw;
+  font-size: 5rem;
+  padding:2rem 0;
 }
 
-.faa-shake.animated-hover:hover{-webkit-animation:wrench 2.5s ease infinite;animation:wrench 2.5s ease infinite}
+#contact a {
+  text-decoration: none;
+  color: #212529
+  }
+#contact a:hover {
+  text-decoration: none;
+  color:#212529;
+}
 
+
+#contact{
+  background-color:white;
+}
+.navbar a:active {
+  color:white;
+}
 
 
 

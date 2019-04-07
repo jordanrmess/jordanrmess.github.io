@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,200" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/hover.css" rel="stylesheet">
 
 
 
@@ -26,9 +27,6 @@
 </head>
 
 <body>
-
-  <!-- <script src="js/typed.min.js></script> -->
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
     <div class="container">
@@ -38,18 +36,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="hvr-underline-reveal nav-item">
             <a class="nav-link" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="hvr-underline-reveal nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="nav-item">
+          <li class="hvr-underline-reveal nav-item">
             <a class="nav-link" href="#">Blog</a>
           </li>
-          <li class="nav-item">
+          <li class=" hvr-underline-reveal nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -58,33 +56,38 @@
   </nav>
 
   <!-- Page Content -->
-  <section class="pb-5">
+  <section>
     <div class="cover container">
       <!-- <video autoplay muted loop id="cover_video">
         <source src="media/ocean.mp4" type="video/mp4">
       </video> -->
       <div class="row">
         <div class="col-lg-8">
-          <h1 id="cover_text" class=" padding-top-lg display-2 text-light"><span id="title"></span></h1>
+          <h1 id="cover_text" class=" display-2 text-light"><span id="title"></span></h1>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Page Content -->
-  <section id="contact" class="pb-5">
+  <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
-          <h1>Let's Talk. </h1>
+        <div class="col-8">
+          <h1>We need to talk. </h1>
         </div>
       </div>
-      <div id="email" class="row">
-        <div class="col-sm">
-          <i class="far fa-envelope fa-5x faa-shake animated-hover"></i>
+      <div id="icons" class="row">
+        <div class="email col-sm-2">
+          <a href="mailto:jordanrmess@gmail.com">
+            <i class="far fa-envelope fa-5x hvr-grow"></i>
+          </a>
+
         </div>
-        <div class="col-sm">
-          <i class="fab fa-linkedin fa-5x faa-shake animated-hover"></i>
+        <div class="col-sm-2">
+          <a href="https://www.linkedin.com/in/jordan-mess">
+            <i class="fab fa-linkedin fa-5x hvr-grow"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -109,6 +112,15 @@
     }
 
     var typed = new Typed("#title", options);
+  </script>
+
+  <script>
+   $(document).ready(function () {
+    $('.navbar a').on("click", function () {
+        $(this).parent().siblings().find("a").removeClass('active');
+        $(this).addClass('active');
+    });
+});
   </script>
 </body>
 
