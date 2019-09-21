@@ -20,10 +20,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="css/hover.css" rel="stylesheet">
-
-
-
-
+  <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
 <body>
@@ -71,64 +68,121 @@
 
   <section id="about">
     <div class="container">
-      <div class="row">
-        <div class="col-lg">
-          <div class="row about-header">
+          <div id="about_header" class="row">
             <div class="col">
               <h1>
-              I like making things.
+                Nice to meet you!
               </h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col"> 
-              My name is Jordan Mess. Yes, my last name is Mess like “oh, what a mess!”. Classic joke. Anyways, I’m a student at the University of Maryland studying Computer Science. I like making things, collecting fonts, and listening to music. 
+          <div id="row1" class="row">
+            <div class="col-2 col-xs-4">
+                <i class="fas fa-graduation-cap fa-4x"></i>
+            </div>
+            <div class="col-10 col-xs-8 about_item">
+                <p>I'm a senior at the University of Maryland studying Computer Science and Entrepreuneurship</p>
             </div>
           </div>
-        </div>
+          <div id="row2" class="row">
+            <div class="col-2">
+                <i class="fas fa-map-pin fa-4x"></i>
+            </div>
+            <div class="col-10 col-xs-8 about_item">
+               <p>I'm from the Baltimore/Washington DC area</p>
+            </div>
+          </div>
+          <div id="row3" class="row">
+            <div class="col-2">
+              <i class="fas fa-headphones-alt fa-4x"></i>
+            </div>
+            <div class="col-10 col-xs-8 about_item">
+                <p>I love all things music, check out my spotify! </p>
+            </div>
+          </div>
 
-        <div class="col-sm visible-lg-block photo-frame">
+        <!-- <div class="col-sm visible-lg-block photo-frame">
           <img class="img-fluid large_img" src="media/itme.jpeg" />
           <img class="img-fluid small_img" src="media/itmezoom.jpeg"/>
+        </div>
+      </div> -->
+  </section>
 
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Portfolio</h1>
         </div>
       </div>
+      <div class="card-columns">
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+      </div>
+      
     </div>
   </section>
 
   <!-- Page Content -->
   <section id="contact">
     <div class="container">
-      <div class="row">
+      <div id="contact_header" class="row">
         <div class="col-8">
           <h1>We need to talk. </h1>
         </div>
       </div>
       <div id="icons" class="row">
-        <div class="email col-3">
+        <div class="email col-md-2">
           <a href="mailto:jordanrmess@gmail.com">
             <i class="far fa-envelope fa-5x hvr-grow"></i>
           </a>
 
         </div>
-        <div class="col-3">
+        <div class="col-md-2">
           <a href="https://www.linkedin.com/in/jordan-mess">
             <i class="fab fa-linkedin fa-5x hvr-grow"></i>
           </a>
         </div>
-        <div class="col-3">
+        <div class="col-md-2">
           <a href="https://open.spotify.com/user/1233930726?si=AACFjAZsRAmNy1wC_A9MBw">
             <i class="fab fa-spotify fa-5x hvr-grow"></i>
           </a>
         </div>
-        <div class="col-3">
+        <div class="col-md-2">
           <a href="https://github.com/jordanrmess">
             <i class="fab fa-github fa-5x hvr-grow"></i>
           </a>
         </div>
+        <div class="col-md-4">
+            <a href="https://www.behance.net/jmessc364">
+              <i class="fab fa-behance-square fa-5x hvr-grow"></i>
+            </a>
+        </div>
       </div>
     </div>
   </section>
+  
 
 
 
@@ -139,12 +193,13 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src="./scripts/typed.js"></script>
+  <script src="scripts/index.js" type="text/javascript"></script>
 
   <script type="application/JavaScript">
 
     var options = {
-      strings: ["Hi, my name is Jordan"],
-      typeSpeed: 50
+      strings: ["Hi","My name is Jordan"],
+      typeSpeed: 80
     }
 
     var typed = new Typed("#title", options);

@@ -100,7 +100,10 @@ body {
 section {
   height: 100%;
   width:100%;
-  padding: 1rem 1rem;
+}
+
+ #portfolio {
+  display:none;
 }
 
 
@@ -133,11 +136,37 @@ section {
 
 #about {
   background-color: #edcabd;
-  padding: 4rem 0;
 }
 
 #about h1 {
   padding-bottom: 0.5rem;
+}
+
+#about .row{
+  padding: 2rem 0 2rem 0;
+}
+
+.about_item{
+  margin-top:1.8rem;
+  margin-bottom: 1rem;
+  font-size: 2vw;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+ 
+}
+
+#about i{
+  font-size:7vw;
+  margin: 1.3rem 0rem 0rem 0rem
+}
+
+@media only screen and (max-width:	600px){
+ #about .row{
+   padding-left: 2rem;
+ }
+ #about p{
+  font-size:3.5vw;
+ }
 }
 
 img {
@@ -215,4 +244,20 @@ a:active {
   border-color: #212529;
   color: #6E9887;
   padding: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
 }
