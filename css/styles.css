@@ -269,3 +269,9 @@ a:active {
   padding: 20px;
   font-size: 150%;
 }
+
+.spotify-link{
+  font-weight:600; 
+  color: #1eb953;
+}
+
