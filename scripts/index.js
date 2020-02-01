@@ -7,6 +7,5 @@ ScrollReveal().reveal('#row2', { delay: 1000 })
 ScrollReveal().reveal('#row3', { delay: 1500 })
 
 
-ScrollReveal().reveal('#contact_header')
-ScrollReveal().reveal('#icons', { delay: 500 })
+
 

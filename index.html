@@ -20,12 +20,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="css/hover.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600&display=swap" rel="stylesheet">
+
 	<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,125 +68,71 @@
 		</div>
 	</section>
 
-	<section id="about">
-		<div class="container">
-			<div id="about_header" class="row">
+	<section id="about" class="about_outer">
+		<div id="about_inner" class="container">
+			<div class="row">
 				<div class="col">
 					<h1>
-						About
+						Jordan is a <i>developer</i> and <i>digital designer</i>
 					</h1>
 				</div>
 			</div>
 			<div id="about_text" class="row">
 				<div class="col-sm">
 					<p id="about_text">
-						Jordan is a student, developer, and designer based in the Washington DC area. She is in her
-						final year at the University of Maryland, studying Computer Science and Entrepreneurship.
+						Based in the Washington DC area, Jordan is finishing her final year at the <i>University of Maryland College Park</i> 
+						studying Computer Science and Business Entrepreneurship.
 					</p>
 				</div>
-				<div id="img" class="col-sm">
-					<img src="media/IMG_2867.JPG">
+			</div>
+			<div class="row">
+				<div class="col">
+					<p id="about_text">In the past, she's interned as a full stack developer @ <i>Microsoft</i> and as an
+						Associate Product Manager @ <i>Google</i>. After graduation in May 2020, she'll be joining as an APM
+						@ <i>Google</i>. Though when she's not in a coffee shop staring at her laptop screen,
+						you
+						can
+						probably find her dangling on the rock wall or trying to look sophisticated at an art museum! </p>
 				</div>
 			</div>
+
 		</div>
 
-		<!-- <div class="col-sm visible-lg-block photo-frame">
-          <img class="img-fluid large_img" src="media/itme.jpeg" />
-          <img class="img-fluid small_img" src="media/itmezoom.jpeg"/>
-        </div>
-      </div> -->
+
 	</section>
 
 
-	<!-- <section id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Experience</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Select category 
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item">All</a>
-                  <a class="dropdown-item">Studio Art</a>
-                  <a class="dropdown-item">Digital Design</a>
-                  <a class="dropdown-item">Engineering</a>
-                </div>
-              </div>
-        </div>
-      </div>
-      <div id="test" class="card-columns">
-          <div id="art" class="card">
-               art
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div id="design" class="card">
-              design
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div id="design" class="card">
-            design2
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div id="eng" class="card">
-            eng
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-          <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-          </div>
-      </div>
-      
-    </div>
-  </section> -->
+
 
 	<!-- Page Content -->
-	<section id="contact">
-		<div class="container">
+	<section id="contact" class="outer_contact">
+		<div class="container inner_contact">
 			<div id="contact_header" class="row">
 				<div class="col-8">
 					<h1>Works</h1>
 				</div>
-      </div>
+			</div>
 			<div id="icons" class="row">
-				<!-- <div class="email col-sm-2">
-					<a href="mailto:jordanrmess@gmail.com">
-						<i class="far fa-envelope fa-5x hvr-grow"></i>
-					</a>
-
-				</div> -->
-				<div class="col-sm-2">
+		
+				<div class="icon col-sm-2">
 					<a href="https://www.linkedin.com/in/jordan-mess">
 						<i class="fab fa-linkedin fa-5x hvr-grow"></i>
 					</a>
 				</div>
-				<!-- <div class="col-sm-2">
-					<a href="https://open.spotify.com/playlist/13AWzDzGK099oBVbjg6vvq?si=_5QkwBn9QXyymlbSqVGL-w">
-						<i class="fab fa-spotify fa-5x hvr-grow"></i>
-					</a>
-				</div> -->
-				<div class="col-sm-2">
+			
+				<div class="icon col-sm-2">
 					<a href="https://github.com/jordanrmess">
 						<i class="fab fa-github fa-5x hvr-grow"></i>
 					</a>
 				</div>
-				<div class="col-sm-4">
+				<div class="icon col-sm-2">
 					<a href="https://www.behance.net/jmessc364">
 						<i class="fab fa-behance-square fa-5x hvr-grow"></i>
+					</a>
+				</div>
+				<div class="icon col-sm-2">
+					<a href="https://www.youtube.com/channel/UC5yE6DczI5vi-FzFS--LhtQ">
+						<i class="fab fa-youtube fa-5x hvr-grow"></i>
 					</a>
 				</div>
 			</div>
